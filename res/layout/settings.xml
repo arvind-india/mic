@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1450dp"
+    android:alpha="0.95"
+    android:background="@drawable/rounded_corner">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/colorHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Change Color"
+        android:textColor="#ffffff"
+        android:textSize="28dp"
+        android:layout_below="@+id/header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="9dp" />
+
+    <TextView
+        android:id="@+id/redBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/colorHead"
+        android:layout_marginTop="9dp"
+        android:paddingLeft="10dp"
+        android:text="Red"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/greenBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Green"
+        android:textColor="@color/colorOn"
+        android:textSize="25dp"
+        android:layout_below="@+id/redSeekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/blueBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Blue"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:layout_below="@+id/greenSeekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/volBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:paddingLeft="10dp"
+        android:text="Change Volume"
+        android:textColor="#ffffff"
+        android:textSize="28dp"
+        android:layout_below="@+id/colorBtn1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/speaker"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Speakerphone"
+        android:textColor="#ffffff"
+        android:textSize="28dp"
+        android:layout_below="@+id/volbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/speakerSwitch"
+        android:layout_toStartOf="@+id/speakerSwitch" />
+
+    <SeekBar
+        android:id="@+id/redSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/redBar"
+        android:max="255" />
+
+    <SeekBar
+        android:id="@+id/greenSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/greenBar"
+        android:max="255" />
+
+    <SeekBar
+        android:id="@+id/blueSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/blueBar"
+        android:max="255" />
+
+    <SeekBar
+        android:id="@+id/volbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/volBar" />
+
+    <Button
+        android:id="@+id/colorBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/blueSeekBar"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="11dp"
+        android:padding="10dp"
+        android:text="Microphone" />
+
+    <Switch
+        android:id="@+id/speakerSwitch"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/volbar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/speaker" />
+
+    <Button
+        android:id="@+id/colorBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="background"
+        android:layout_above="@+id/volBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+</RelativeLayout>
